@@ -1,5 +1,18 @@
 ---
 layout: default
 ---
-
-<p>starting</p>
+<section>
+  {% include nav.html %}
+  <div>
+    <h2>TYLER1</h2>
+    <h3>CREATIVE STREAMER</h3>
+  </div>
+</section>
+<section>
+  {% for icon in site.data.icons %}
+    <div>
+      <img src="{{icon.images}}" alt="{{icon.title}}">
+      <h2>{{icon.title}}</h2>
+    </div>
+  {% endfor %}
+</section>
