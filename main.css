@@ -38,6 +38,30 @@ nav .button {
   width: 800px;
 }
 
+.head {
+  background-color: #000;
+  color: #fff;
+  height: 650px;
+}
+
+.head .main-bg {
+  height: 650px;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  animation: fadeIn 10s infinite alternate;
+}
+
+.head .main-bg2 {
+  height: 650px;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  animation: fadeOut 5s infinite alternate;
+}
+
 .resp-main {
   position: relative;
   z-index: 1;
@@ -63,6 +87,19 @@ nav .button {
 
 .toggle-nav {
   transform: translateY(0);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
