@@ -1,8 +1,88 @@
 html, body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+nav {
+  align-items: center;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  position: relative;
+  height: 80px;
+  z-index: 3;
+}
+
+nav ul {
+  display: flex;
+  flex-basis: 40%;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 4%;
+}
+
+nav p, nav .button {
+  margin: 0 2%;
+}
+
+nav .button {
+  display: none;
+}
+
 .dravens img {
   width: 800px;
+}
+
+.resp-main {
+  position: relative;
+  z-index: 1;
+}
+
+.responsiveNav {
+  background-color: rgba(228, 226, 226, 0.9);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  margin: 0;
+  padding: 0 0 0 20px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  list-style-type: none;
+  transform: translateY(-150%);
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+
+.toggle-nav {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 1024px) {
+
+  nav {
+    background-color: rgba(228, 226, 226, 0.9);
+  }
+
+  nav ul {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  nav .button {
+    display: block;
+  }
+
+  nav .nav {
+    display: none;
+  }
 }
