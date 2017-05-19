@@ -16,3 +16,41 @@ layout: default
     </div>
   {% endfor %}
 </section>
+<section>
+  <h2>About Tyler1</h2>
+  <p>Tyler1 is a reformed League of Legends player.</p>
+  <p>He has exposed hypocrites such as Memeos</p>
+  <p>Tyler1 ban was the highlight of his career</p>
+</section>
+<section>
+  <h2>Forms of tyler1</h2>
+  <div>
+    {% for form in site.data.forms %}
+      <div class="parent-img">
+        <div class="child" style="background-image: url('{{form.image}}')">
+          <p>{{form.title}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<section>
+  <div>
+    <p>22</p>
+    <p>accounts banned</p>
+  </div>
+  <div>
+    <p>9999</p>
+    <p>Draven plays</p>
+  </div>
+</section>
+<section>
+  <h2>TYLER1 Accomplishment</h2>
+  {% for projects in site.data.project %}
+    <div class="parent">
+      <div class="child" style="background-image: url('{{projects.image}}')">
+        <p>{{projects.title}}</p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
