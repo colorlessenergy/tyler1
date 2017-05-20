@@ -18,19 +18,23 @@ layout: default
     </div>
   {% endfor %}
 </section>
-<section>
-  <h2>About Tyler1</h2>
-  <p>Tyler1 is a reformed League of Legends player.</p>
-  <p>He has exposed hypocrites such as Memeos</p>
-  <p>Tyler1 ban was the highlight of his career</p>
-</section>
-<section>
-  <h2>Forms of tyler1</h2>
+<section class="aboutty">
+  <h2>About TYL <span class="underline">uh...</span> Tay'Von</h2>
   <div>
+    <p>Tyler1 is a reformed League of Legends player. He has exposed hypocrites such as Memeos. Tyler1 ban was the highlight of his career</p>
+    <p>This man has accomplished incredible feats, such as getting 22 accounts on league of legends banned. He also stream 12 hours a day</p>
+    <p>and rose through the ranks of the most <span class="slash">toxic</span> draven In NA.</p>
+  </div>
+</section>
+<section class="forms">
+  <h2>Forms of tyler1</h2>
+  <div class="forms-image">
     {% for form in site.data.forms %}
       <div class="parent-img">
         <div class="child" style="background-image: url('{{form.image}}')">
-          <p>{{form.title}}</p>
+          <div class="inner">
+            <p>{{form.title}}</p>
+          </div>
         </div>
       </div>
     {% endfor %}

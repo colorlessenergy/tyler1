@@ -34,9 +34,77 @@ nav .button {
   display: none;
 }
 
+.aboutty {
+  align-items: center;
+  background-color: #1b1a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+}
+
+.aboutty div {
+  color: #d6d6d6;
+}
+
+.aboutty h2 {
+  letter-spacing: 3px;
+}
+
 .dravens img {
   width: 800px;
 }
+
+.forms .parent-img {
+  background-color: #000;
+  height: 500px;
+  overflow: hidden;
+  width: 30%;
+}
+
+.forms .child {
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  transition: all 4s;
+}
+
+.forms .forms-image {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*hover image zooms in*/
+
+.parent-img:hover .child,
+.parent-img:focus .child {
+    transform: scale(1.5);
+}
+
+.forms .child .inner {
+  color: #fff;
+  position: relative;
+  opacity: 0;
+  z-index: 10;
+}
+
+.forms .child:hover {
+  opacity: 0.5;
+}
+
+.forms .child:hover > .inner {
+  opacity: 1;
+}
+
 
 .head {
   background-color: #000;
@@ -59,6 +127,7 @@ nav .button {
   width: 100%;
   z-index: 1;
   animation: fadeOut 5s infinite alternate;
+  overflow: hidden;
 }
 
 .head .main-bg2 {
@@ -67,14 +136,25 @@ nav .button {
   width: 100%;
   opacity: 0;
   z-index: 1;
-  animation-delay: 5s;
+  animation-delay: 3s;
   animation: fadeIn 5s infinite alternate;
+  overflow: hidden;
 }
 
 .icons {
   align-items: center;
   display: flex;
+  height: 24rem;
   justify-content: space-around;
+}
+
+.icons img {
+  height: 200px;
+  width: 200px;
+}
+
+.icons div {
+  text-align: center;
 }
 
 .resp-main {
@@ -83,7 +163,7 @@ nav .button {
 }
 
 .responsiveNav {
-  background-color: rgba(228, 226, 226, 0.9);
+  background-color: rgba(228, 226, 226, 0.5);
   color: #000;
   display: flex;
   flex-direction: column;
@@ -104,6 +184,17 @@ nav .button {
   transform: translateY(0);
 }
 
+/*text styles*/
+
+.slash {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
 
 @keyframes fadeIn {
   from {
@@ -117,10 +208,20 @@ nav .button {
   }
 }
 
+@keyframes fadesText {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1024px) {
 
   nav {
-    background-color: rgba(228, 226, 226, 0.9);
+    background-color: rgba(228, 226, 226, 0.5);
   }
 
   nav ul {
