@@ -44,13 +44,21 @@ nav .button {
   height: 650px;
 }
 
+.head .info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 560px;
+  justify-content: center;
+}
+
 .head .main-bg {
   height: 650px;
   opacity: 0.3;
   position: absolute;
   width: 100%;
   z-index: 1;
-  animation: fadeIn 10s infinite alternate;
+  animation: fadeOut 5s infinite alternate;
 }
 
 .head .main-bg2 {
@@ -59,7 +67,14 @@ nav .button {
   width: 100%;
   opacity: 0;
   z-index: 1;
-  animation: fadeOut 5s infinite alternate;
+  animation-delay: 5s;
+  animation: fadeIn 5s infinite alternate;
+}
+
+.icons {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .resp-main {
