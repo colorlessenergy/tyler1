@@ -366,14 +366,17 @@ nav .button {
 
 .testimonial {
   align-items: center;
-  background-color: black;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   height: 400px;
   justify-content: center;
+  position: relative;
 }
 
 .testimonial img {
+  top: 0;
+  left: 0;
   height: 399px;
   opacity: 0.3;
   position: absolute;
