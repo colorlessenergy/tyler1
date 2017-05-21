@@ -18,7 +18,7 @@ layout: default
     </div>
   {% endfor %}
 </section>
-<section class="aboutty">
+<section id="about" class="aboutty">
   <h2>About TYL <span class="underline">uh...</span> Tay'Von</h2>
   <div>
     <p>Tyler1 is a reformed League of Legends player. He has exposed hypocrites such as Memeos. Tyler1 ban was the highlight of his career</p>
@@ -27,7 +27,7 @@ layout: default
   </div>
 </section>
 <section class="forms">
-  <h2>Forms of tyler1</h2>
+  <h2>Forms of <span>tyler1</span></h2>
   <div class="forms-image">
     {% for form in site.data.forms %}
       <div class="parent-img">
@@ -40,64 +40,66 @@ layout: default
     {% endfor %}
   </div>
 </section>
-<section>
+<section class="dataty">
   <div>
-    <p>22</p>
+    <p id="accounts">22</p>
     <p>accounts banned</p>
   </div>
   <div>
-    <p>9999</p>
+    <p id="plays">9999</p>
     <p>Draven plays</p>
   </div>
 </section>
-<section>
+<section class="accomplishty">
   <h2>TYLER1 Accomplishment</h2>
-  {% for projects in site.data.project %}
-    <div class="parent">
-      <div class="child" style="background-image: url('{{projects.image}}')">
-        <p>{{projects.title}}</p>
+  <div class="forms-image">
+    {% for projects in site.data.project %}
+      <div class="parent-img">
+        <div class="child" style="background-image: url('{{projects.image}}')">
+          <div class="inner">
+            <p>{{projects.title}}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  {% endfor %}
-</section>
-<section>
-  <h2>subscribe to newsletter</h2>
-  <div>
-    <input type="text">
-    <a href="#">subscribe</a>
+    {% endfor %}
   </div>
-</section>
-<section>
-  <h2>tyler1 creates awesome content</h2>
-  <a href="#">start watching</a>
-</section>
-<section>
-  <h2>About Tyler mther fk'n 1</h2>
-  <p>I sexually identify as tyler1. Ever since I was a boy I dreamed of running it down mid and typing "hehe xd" to boosted animals. People say to me that a beta becoming an alpha god is impossible and that I’m fucking retarded, but I don’t care, I’m an alpha. I’m having an engineer install a McChicken dispenser and an Oreo McFlury maker in my room. From now on I want you guys to call me “tyler1” and respect my right to catch axes and flame needlessly. If you can’t accept me you’re an dravenphobe and need to check your alpha privilege. hehe xd.</p>
 </section>
 <section class="dravens">
   {% for dravens in site.data.draven %}
-    <div>
-      <img src="{{dravens.image}}" alt="{{draven.title}}">
-      <p>{{draven.title}}</p>
+  <div class="parent-img">
+    <div class="{% if {{dravens.class}} == 'move' %} {{dravens.class}} {% endif %}child" style="background-image: url('{{dravens.image}}')">
+      <div class="inner">
+        <p>{{dravens.title}}</p>
+      </div>
     </div>
+  </div>
   {% endfor %}
 </section>
-<section>
-  <h2>testimonials</h2>
-  <p>facing tyler1 on the rift was a really easy game! He got ganked and died. After that he just int feed. Thanks for free lp LUL. - nottyler1fanboi (before reform)</p>
+<section class="content">
+  <h2>Tyler1 creates awesome content</h2>
+  <a href="https://www.twitch.tv/loltyler1">start watching</a>
 </section>
-<section>
-  <h2>CONTACTS</h2>
-  <div>
-    <h2>stream</h2>
-    <p><a href="">twitch stream</a></p>
+<section class="about">
+  <h2>the story of <span>Tyler</span> mther fk'n 1</h2>
+  <p>I sexually identify as tyler1. Ever since I was a boy I dreamed of running it down mid and typing "hehe xd" to boosted animals. People say to me that a beta becoming an alpha god is impossible and that I’m fucking retarded, but I don’t care, I’m an alpha. I’m having an engineer install a McChicken dispenser and an Oreo McFlury maker in my room. From now on I want you guys to call me “tyler1” and respect my right to catch axes and flame needlessly. If you can’t accept me you’re an dravenphobe and need to check your alpha privilege. hehe xd.</p>
+</section>
+<section class="testimonial">
+  <img src="images/classicdraven.jpg" alt="classic draven skin">
+  <h2>TEST<span class="underline">IMO</span>NIALS</h2>
+  <p>facing tyler1 on the rift was a really easy game! He got ganked and died. After that he just int feed. Thanks for free lp LUL.</p>
+  <p>- nottyler1fanboi (before reform)</p>
+</section>
+<section id="contact" class="contact">
+  <h2 class="contact-title">CO<span>NT</span>ACTS</h2>
+  <div class="contact-info">
+    <div>
+      <h2>stream</h2>
+      <p><a href="https://www.twitch.tv/loltyler1">TYLER1 stream</a></p>
+    </div>
+    <div>
+      <h2>contact me</h2>
+      <p>theluckorange@yahoo.com</p>
+    </div>
   </div>
-  <div>
-    <h2>contact me</h2>
-    <p>theluckorange@yahoo.com</p>
-  </div>
 </section>
-<section>
-  <h2>T Y L E R 1</h2>
-</section>
+{% include footer.html %}

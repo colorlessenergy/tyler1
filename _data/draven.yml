@@ -1,17 +1,22 @@
 - title: draven beast
   image: images/dravenbeast.jpg
+  class: move
 
 - title: goofy draven
   image: images/goofydraven.jpg
+  class: move
 
 - title: cool draven
   image: images/cooldraven.jpg
+  class: move
 
 - title: gladiator beast draven
   image: images/gladdraven.jpg
+  class: move
 
 - title: pool party draven
   image: images/pooldraven.jpg
 
 - title: speaker draven
   image: images/speakerdraven.jpg
+  class: move
