@@ -60,8 +60,7 @@ nav .button {
   display: flex;
   flex-direction: column;
   height: 300px;
-  justify-content: flex-end;
-  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .about h2 {
@@ -70,6 +69,7 @@ nav .button {
 
 .about p {
   color: #808080;
+  line-height: 23px;
   text-align: center;
   width: 80%;
 }
@@ -272,10 +272,6 @@ nav .button {
   opacity: 0;
 }
 
-/*.forms .child:hover {
-  opacity: 0.5;
-}*/
-
 .child:hover > .inner {
   opacity: 1;
 }
@@ -369,7 +365,7 @@ nav .button {
   background-color: #000;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 500px;
   justify-content: center;
   position: relative;
 }
@@ -377,7 +373,7 @@ nav .button {
 .testimonial img {
   top: 0;
   left: 0;
-  height: 399px;
+  height: 499px;
   opacity: 0.3;
   position: absolute;
   width: 100%;
@@ -496,7 +492,7 @@ nav .button {
 
   .forms .forms-image .parent-img {
     height: 350px;
-    width: 40%;
+    width: 70%;
   }
 }
 
@@ -504,7 +500,19 @@ nav .button {
 @media screen and (max-width: 600px) {
 
   .about {
-    height: 400px;
+    height: 550px;
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .about h2 span {
+    padding-bottom: 2px;
+  }
+
+  .about p {
+    width: 95%;
   }
 
   .content {
